@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Stat_Update_Battle_Start" load_steps=3 format=3 uid="uid://2gw170evo8ov"]
+
+[ext_resource type="Script" uid="uid://cx3atitu0ganv" path="res://resources/pwr_scripts/statupdate_on_battle_start.gd" id="1_hlyrt"]
+[ext_resource type="Texture2D" uid="uid://cwpin7vyycgg8" path="res://art/Pwrs/Pwr_c.png" id="1_q386l"]
+
+[resource]
+script = ExtResource("1_hlyrt")
+power_name = "Baseball Bat"
+hp = 0
+max_hp = 0
+attack = 2
+avoid = 0
+luck = 5
+movement = 0
+attack_range = 0
+icon = ExtResource("1_q386l")
+description = " Go for a homerun! +2 ATK and +5 luck at the start of battle.f battle but -5 avoid and -1 movement."
+metadata/_custom_type_script = "uid://cx3atitu0ganv"

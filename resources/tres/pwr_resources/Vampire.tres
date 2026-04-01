@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Stat_Update_onHit_HealAttack" load_steps=3 format=3 uid="uid://b7bijucq8phd"]
+
+[ext_resource type="Texture2D" uid="uid://4lxg6gnso70n" path="res://art/Pwrs/Pwr_o.png" id="1_6wgeo"]
+[ext_resource type="Script" uid="uid://b5wrcdlqekmtj" path="res://resources/pwr_scripts/statupdate_on_hit_heal_attack.gd" id="1_eyyx2"]
+
+[resource]
+script = ExtResource("1_eyyx2")
+power_name = "Novelty vampire teeth"
+hp = 0
+icon = ExtResource("1_6wgeo")
+description = " A weird bite. Heal health equal to your ATK when attacking."
+metadata/_custom_type_script = "uid://b5wrcdlqekmtj"

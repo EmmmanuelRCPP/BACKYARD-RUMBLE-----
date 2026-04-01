@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=4 uid="uid://dh28y3hlgjffv"]
+
+[ext_resource type="PackedScene" uid="uid://fw6nxrdqdo01" path="res://test_environments/test_unit_movement_range.tscn" id="1_1bbdv"]
+
+[node name="l3" type="Node"]
+
+[node name="TEST_Unit_Movement_Range" parent="." instance=ExtResource("1_1bbdv")]
+position = Vector2(-122, -26)
+
+[node name="GroundLayer" parent="TEST_Unit_Movement_Range/TileMaps/LayerContainer" index="0"]
+tile_map_data = PackedByteArray("AAD/////AgAAAAAAAAD//wAAAgAAAAAAAAAAAP//AgAAAAAAAAAAAAAAAgAAAAAAAAD+//7/AgAAAAAAAAD+////AgAAAAAAAAD+/wAAAgAAAAAAAAD///7/AgAAAAAAAAAAAP7/AgAAAAAAAAAEAP7/AgAAAAAAAAAEAP//AgAAAAAAAAAEAAAAAgAAAAAAAAAFAP7/AgAAAAAAAAAFAP//AgAAAAAAAAAFAAAAAgAAAAAAAAAGAP7/AgAAAAAAAAAGAP//AgAAAAAAAAAGAAAAAgAAAAAAAAD5//7/AgAAAAAAAAD5////AgAAAAAAAAD5/wAAAgAAAAAAAAD6//7/AgAAAAAAAAD6////AgAAAAAAAAD6/wAAAgAAAAAAAAD7//7/AgAAAAAAAAD7////AgAAAAAAAAD7/wAAAgAAAAAAAAD8////AgABAAAAAAD9////AgABAAAAAAABAP//AgABAAAAAAACAP//AgABAAAAAAADAP//AgABAAAAAAACAAAAAQACAAEAAAABAAAAAQACAAEAAAADAAAAAQACAAEAAAACAP7/AQACAAEAAAABAP7/AQACAAEAAAADAP7/AQACAAEAAAD9//7/AQACAAEAAAD8//7/AQACAAEAAAD8/wAAAQACAAEAAAD9/wAAAQACAAEAAAA=")
+
+[node name="PropLayer" parent="TEST_Unit_Movement_Range/TileMaps/LayerContainer" index="2"]
+tile_map_data = PackedByteArray("AAD8/wAAAAAAAAAACQD8//7/AAAAAAAACQD9//7/AAAAAAAACQD9/wAAAAAAAAAACQABAAAAAAAAAAAACQACAAAAAAAAAAAACQADAAAAAAAAAAAACQABAP7/AAAAAAAACQACAP7/AAAAAAAACQADAP7/AAAAAAAACQA=")
+
+[node name="UnitLayer" parent="TEST_Unit_Movement_Range/TileMaps/LayerContainer" index="3"]
+tile_map_data = PackedByteArray("AAD9////AgAAAAAAAAABAP//AgABAAAAAAD/////AgACAAAAAAAGAAAAAgABAAEAAAD5/wAAAgAAAAEAAAD///7/AgACAAEAAAA=")
+
+[node name="UnitStatus" parent="TEST_Unit_Movement_Range/UI" index="1"]
+offset_right = 7570.0
+offset_bottom = 4909.0
+
+[node name="PreparationsUI" parent="TEST_Unit_Movement_Range" index="4"]
+visible = false
+
+[editable path="TEST_Unit_Movement_Range"]
+[editable path="TEST_Unit_Movement_Range/TileMaps"]
+[editable path="TEST_Unit_Movement_Range/UI/UnitMenu"]
+[editable path="TEST_Unit_Movement_Range/UI/UnitStatus"]
+[editable path="TEST_Unit_Movement_Range/PreparationsUI"]
+[editable path="TEST_Unit_Movement_Range/CanvasLayer/Background"]

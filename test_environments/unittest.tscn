@@ -1,0 +1,50 @@
+[gd_scene load_steps=10 format=3 uid="uid://8wp8ro6p6twp"]
+
+[ext_resource type="Script" uid="uid://bugmi7hpaoib4" path="res://test_environments/unittest.gd" id="1_pchws"]
+[ext_resource type="PackedScene" uid="uid://d3k8l0o1gr7yp" path="res://resources/tres/scenes/unit_sprite.tscn" id="2_pchws"]
+[ext_resource type="PackedScene" uid="uid://efxpfwugsxvl" path="res://test_environments/sfx_player.tscn" id="3_fma61"]
+[ext_resource type="AudioStream" uid="uid://bctnl0ndtfq1m" path="res://music/sfx/rumble step.ogg" id="4_y4vk6"]
+[ext_resource type="AudioStream" uid="uid://vbbpj56naafk" path="res://music/sfx/hit.mp3" id="5_y4vk6"]
+[ext_resource type="AudioStream" uid="uid://dn07ihbgam172" path="res://music/sfx/hurt.ogg" id="6_stmcj"]
+[ext_resource type="AudioStream" uid="uid://tiuqkixk36t5" path="res://music/sfx/rumble dead.ogg" id="7_oobjw"]
+[ext_resource type="AudioStream" uid="uid://bfsq65e4hoa81" path="res://music/sfx/rumble crit.ogg" id="8_d28fq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fma61"]
+size = Vector2(96, 106)
+
+[node name="Unittest" type="Area2D"]
+z_index = 1
+y_sort_enabled = true
+script = ExtResource("1_pchws")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-32, -48)
+shape = SubResource("RectangleShape2D_fma61")
+
+[node name="UnitSprite" parent="." instance=ExtResource("2_pchws")]
+y_sort_enabled = false
+position = Vector2(-29, -45)
+
+[node name="SFX" type="Node" parent="."]
+
+[node name="Step" parent="SFX" instance=ExtResource("3_fma61")]
+stream = ExtResource("4_y4vk6")
+
+[node name="Hit" parent="SFX" instance=ExtResource("3_fma61")]
+stream = ExtResource("5_y4vk6")
+
+[node name="Hurt" parent="SFX" instance=ExtResource("3_fma61")]
+stream = ExtResource("6_stmcj")
+volume_db = 12.404
+
+[node name="Dead" parent="SFX" instance=ExtResource("3_fma61")]
+stream = ExtResource("7_oobjw")
+volume_db = -5.0
+pitch_scale = 2.0
+
+[node name="Crit" parent="SFX" instance=ExtResource("3_fma61")]
+stream = ExtResource("8_d28fq")
+pitch_scale = 2.0
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

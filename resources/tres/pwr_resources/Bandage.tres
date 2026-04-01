@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Stat_Update_onHurt" load_steps=3 format=3 uid="uid://cas87jwxc8dl6"]
+
+[ext_resource type="Texture2D" uid="uid://d4jdvpq5gk8xt" path="res://art/Pwrs/Pwr_e.png" id="1_725bd"]
+[ext_resource type="Script" uid="uid://b1do1qdwqy5u3" path="res://resources/pwr_scripts/statupdate_on_hurt_start.gd" id="1_rvj1n"]
+
+[resource]
+script = ExtResource("1_rvj1n")
+power_name = "Bandage"
+hp = 2
+max_hp = 0
+attack = 0
+avoid = 0
+movement = 0
+attack_range = 0
+icon = ExtResource("1_725bd")
+description = " Patch yourself up mid-fight. Gain +2 health every time you take damage."
+price = 3
+metadata/_custom_type_script = "uid://b1do1qdwqy5u3"

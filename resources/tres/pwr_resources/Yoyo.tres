@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Stat_Update_onHit_Chance" load_steps=3 format=3 uid="uid://bfeomxi1hptoe"]
+
+[ext_resource type="Script" uid="uid://bosyj484p3vvw" path="res://resources/pwr_scripts/statupdate_on_hit_chance.gd" id="1_2ypbb"]
+[ext_resource type="Texture2D" uid="uid://bg8c20wlea6u0" path="res://art/Pwrs/Pwr_l.png" id="1_ci84k"]
+
+[resource]
+script = ExtResource("1_2ypbb")
+power_name = "Yoyo"
+hp = 0
+max_hp = 50
+attack = 7
+avoid = 0
+movement = 0
+attack_range = 0
+icon = ExtResource("1_ci84k")
+description = "Walk the dog… or your enemy. 50% chance to deal  +7 damage."
+metadata/_custom_type_script = "uid://bosyj484p3vvw"

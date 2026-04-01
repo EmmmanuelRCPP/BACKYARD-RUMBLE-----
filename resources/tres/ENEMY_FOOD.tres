@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="UnitData" load_steps=7 format=3 uid="uid://tu58335yh4ht"]
+
+[ext_resource type="Resource" uid="uid://bjtidayef0wkh" path="res://resources/tres/pwr_resources/PBJ.tres" id="1_7720i"]
+[ext_resource type="Resource" uid="uid://jqhjcwsej10d" path="res://resources/tres/pwr_resources/PackedLunch.tres" id="2_8hatt"]
+[ext_resource type="Resource" uid="uid://k04xp3lvumtf" path="res://resources/tres/pwr_resources/Healthy Lunch.tres" id="3_le0ja"]
+[ext_resource type="Resource" uid="uid://bb2aran6anowl" path="res://resources/tres/pwr_resources/JunkFood.tres" id="4_4dac3"]
+[ext_resource type="Script" uid="uid://duxf0qsqbsnxh" path="res://databases/unit_resource.gd" id="4_le0ja"]
+[ext_resource type="Texture2D" uid="uid://bjy21u6a0lal3" path="res://art/unit/e3.png" id="6_yrtft"]
+
+[resource]
+script = ExtResource("4_le0ja")
+unit_name = "Munch"
+faction = 1
+ID = 9
+luck = 5
+attack_range = 2
+current_hp = 10
+inventory = Array[Resource]([ExtResource("1_7720i"), ExtResource("2_8hatt"), ExtResource("3_le0ja"), ExtResource("4_4dac3")])
+texture = ExtResource("6_yrtft")
+metadata/_custom_type_script = "uid://duxf0qsqbsnxh"

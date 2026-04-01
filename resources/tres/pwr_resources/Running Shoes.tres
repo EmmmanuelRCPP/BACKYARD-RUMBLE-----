@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Stat_Update_Battle_Start" load_steps=3 format=3 uid="uid://m2nua85refk6"]
+
+[ext_resource type="Texture2D" uid="uid://bxlgco0hhp2jv" path="res://art/Pwrs/Pwr_n.png" id="1_hldx3"]
+[ext_resource type="Script" uid="uid://cx3atitu0ganv" path="res://resources/pwr_scripts/statupdate_on_battle_start.gd" id="1_uwmav"]
+
+[resource]
+script = ExtResource("1_uwmav")
+power_name = "Running Shoes"
+hp = 0
+max_hp = 0
+attack = 0
+avoid = 0
+movement = 3
+attack_range = 0
+icon = ExtResource("1_hldx3")
+description = "Gotta go fast. Start the battle with +3 movement."
+metadata/_custom_type_script = "uid://cx3atitu0ganv"

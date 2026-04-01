@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Stat_Update_Battle_Start" load_steps=3 format=3 uid="uid://bjtidayef0wkh"]
+
+[ext_resource type="Script" uid="uid://cx3atitu0ganv" path="res://resources/pwr_scripts/statupdate_on_battle_start.gd" id="1_iuhxp"]
+[ext_resource type="Texture2D" uid="uid://cbmuqxvfjf34n" path="res://art/Pwrs/Pwr_f.png" id="1_rxxhq"]
+
+[resource]
+script = ExtResource("1_iuhxp")
+power_name = "PBJ"
+hp = 7
+max_hp = 0
+attack = 0
+avoid = 0
+movement = 0
+icon = ExtResource("1_rxxhq")
+description = " A solid meal before the fight. Start the battle with +7 health."
+metadata/_custom_type_script = "uid://cx3atitu0ganv"

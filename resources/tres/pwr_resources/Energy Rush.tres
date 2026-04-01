@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Stat_Update_turn_and_battle" load_steps=3 format=3 uid="uid://bp8yrptci1pts"]
+
+[ext_resource type="Texture2D" uid="uid://ccgh8vtpb0fbm" path="res://art/Pwrs/Pwr_j.png" id="1_822c2"]
+[ext_resource type="Script" uid="uid://ddh0wbj3jkkot" path="res://resources/pwr_scripts/on_turn_start_and_battle_begin_Chance.gd" id="1_vq7uv"]
+
+[resource]
+script = ExtResource("1_vq7uv")
+movement2 = -1
+power_name = "Energy Rush"
+hp = 0
+max_hp = 0
+attack = 0
+avoid = 0
+attack_range = 0
+icon = ExtResource("1_822c2")
+description = "A burst of speed that fades. Start fast but lose 1 movement each turn."
+metadata/_custom_type_script = "uid://ddh0wbj3jkkot"

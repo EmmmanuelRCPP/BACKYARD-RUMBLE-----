@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Stat_Update_turn_start_chance" load_steps=3 format=3 uid="uid://yn6gf672silm"]
+
+[ext_resource type="Texture2D" uid="uid://e55siu2ys3f0" path="res://art/Pwrs/Pwr_ha.png" id="1_bss2v"]
+[ext_resource type="Script" uid="uid://b4pibqpwehib7" path="res://resources/pwr_scripts/statupdate_on_turn_start_Chance.gd" id="2_1ge0a"]
+
+[resource]
+script = ExtResource("2_1ge0a")
+power_name = "Juicebox"
+ID = 1
+hp = 2
+max_hp = 0
+attack = 0
+avoid = 0
+movement = 0
+attack_range = 0
+icon = ExtResource("1_bss2v")
+description = "Gives +2 HP at the start of every turn."
+metadata/_custom_type_script = "uid://b4pibqpwehib7"

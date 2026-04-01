@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Stat_Update_turn_start_chance" load_steps=3 format=3 uid="uid://jqhjcwsej10d"]
+
+[ext_resource type="Texture2D" uid="uid://c6lnc7u0gk62p" path="res://art/Pwrs/Pwr_a.png" id="1_q1wql"]
+[ext_resource type="Script" uid="uid://b4pibqpwehib7" path="res://resources/pwr_scripts/statupdate_on_turn_start_Chance.gd" id="2_n50kj"]
+
+[resource]
+script = ExtResource("2_n50kj")
+power_name = "PackedLunch"
+ID = 1
+hp = 1
+max_hp = 0
+attack = 0
+avoid = 0
+movement = 0
+attack_range = 0
+icon = ExtResource("1_q1wql")
+description = "Packed with love from mum. At the start of every turn grab a bite and +1 health."
+metadata/_custom_type_script = "uid://b4pibqpwehib7"

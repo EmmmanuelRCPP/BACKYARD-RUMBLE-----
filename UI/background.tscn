@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://frou5ogb047q"]
+
+[ext_resource type="Shader" uid="uid://43lswebyth60" path="res://resources/shaders/diagonal_scroll.gdshader" id="1_ns7dc"]
+[ext_resource type="Texture2D" uid="uid://crac8ob21ox14" path="res://art/bg/frame_bg.png" id="2_cbj22"]
+[ext_resource type="Script" uid="uid://cgqe4oy81jymk" path="res://UI/background.gd" id="3_cbj22"]
+[ext_resource type="Theme" uid="uid://uerdq36pewq8" path="res://UI/TEXT_THEME.tres" id="4_ponwp"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ponwp"]
+shader = ExtResource("1_ns7dc")
+shader_parameter/direction = Vector2(1, 1)
+shader_parameter/speed = 1.0
+
+[node name="Background" type="TextureRect"]
+z_index = -2
+material = SubResource("ShaderMaterial_ponwp")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_cbj22")
+stretch_mode = 1
+script = ExtResource("3_cbj22")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1164.0
+offset_bottom = 650.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.45490196)
+
+[node name="Label" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_right = 299.0
+offset_bottom = 117.0
+theme = ExtResource("4_ponwp")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+text = "Interact with left click
+Cancel with right click
+Use scroll wheel to zoom
+Middle Mouse button to pan"

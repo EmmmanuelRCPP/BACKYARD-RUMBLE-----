@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="UnitData" load_steps=3 format=3 uid="uid://cnh7fqa1in0mn"]
+
+[ext_resource type="Script" uid="uid://duxf0qsqbsnxh" path="res://databases/unit_resource.gd" id="1_fug6k"]
+[ext_resource type="Texture2D" uid="uid://c34rbjle7h4l0" path="res://art/unit/u3.png" id="2_fug6k"]
+
+[resource]
+script = ExtResource("1_fug6k")
+ID = 3
+max_hp = 25
+attack = 8
+movement = 3
+attack_range = 3
+current_hp = 25
+texture = ExtResource("2_fug6k")
+metadata/_custom_type_script = "uid://duxf0qsqbsnxh"

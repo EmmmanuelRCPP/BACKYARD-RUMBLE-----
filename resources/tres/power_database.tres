@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="PowerDatabase" load_steps=3 format=3 uid="uid://bxmi4243t8b2n"]
+
+[ext_resource type="Script" uid="uid://b7g4scutevyat" path="res://databases/power_resource.gd" id="1_34osd"]
+[ext_resource type="Script" uid="uid://dnov83t26i6oh" path="res://databases/pwr_resource_manager.gd" id="2_i5ewf"]
+
+[resource]
+script = ExtResource("2_i5ewf")
+metadata/_custom_type_script = "uid://dnov83t26i6oh"

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://tiuqkixk36t5"
+path="res://.godot/imported/rumble dead.ogg-0dc201dc3e8b0738d350b16ca7027bbf.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/sfx/rumble dead.ogg"
+dest_files=["res://.godot/imported/rumble dead.ogg-0dc201dc3e8b0738d350b16ca7027bbf.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

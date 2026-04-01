@@ -1,0 +1,81 @@
+[gd_resource type="TileSet" load_steps=6 format=3 uid="uid://utdqycapowsr"]
+
+[ext_resource type="PackedScene" uid="uid://da8538gukmrwy" path="res://resources/tileSets/special_tiles/cone.tscn" id="1_pbehy"]
+[ext_resource type="Texture2D" uid="uid://boylxf6xngeme" path="res://art/tile/COMtiles.png" id="2_pbehy"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_wr5xb"]
+scenes/9/scene = ExtResource("1_pbehy")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7g5o0"]
+texture = ExtResource("2_pbehy")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, -32)
+0:0/0/modulate = Color(0.7484765, 0, 0.15079492, 1)
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, -32)
+1:0/0/modulate = Color(0.7484765, 0, 0.15079492, 1)
+2:0/0 = 0
+2:0/0/texture_origin = Vector2i(0, -32)
+2:0/0/modulate = Color(0.7484765, 0, 0.15079492, 1)
+0:1/0 = 0
+0:1/0/texture_origin = Vector2i(0, -32)
+0:1/0/modulate = Color(0.7484765, 0, 0.15079492, 1)
+1:1/0 = 0
+1:1/0/texture_origin = Vector2i(0, -32)
+1:1/0/modulate = Color(0.7484765, 0, 0.15079492, 1)
+2:1/0 = 0
+2:1/0/texture_origin = Vector2i(0, -32)
+2:1/0/modulate = Color(0.7484765, 0, 0.15079492, 1)
+0:2/0 = 0
+0:2/0/texture_origin = Vector2i(0, -32)
+0:2/0/modulate = Color(0.7484765, 0, 0.15079492, 1)
+1:2/0 = 0
+1:2/0/texture_origin = Vector2i(0, -32)
+1:2/0/modulate = Color(0.7484765, 0, 0.15079492, 1)
+2:2/0 = 0
+2:2/0/texture_origin = Vector2i(0, -32)
+2:2/0/modulate = Color(0.7484765, 0, 0.15079492, 1)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wr5xb"]
+texture = ExtResource("2_pbehy")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, -32)
+0:0/0/custom_data_0 = true
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, -32)
+1:0/0/custom_data_0 = true
+2:0/0 = 0
+2:0/0/texture_origin = Vector2i(0, -32)
+2:0/0/custom_data_0 = true
+0:1/0 = 0
+0:1/0/texture_origin = Vector2i(0, -32)
+0:1/0/custom_data_0 = true
+1:1/0 = 0
+1:1/0/texture_origin = Vector2i(0, -32)
+1:1/0/custom_data_0 = true
+2:1/0 = 0
+2:1/0/texture_origin = Vector2i(0, -32)
+2:1/0/custom_data_0 = true
+0:2/0 = 0
+0:2/0/texture_origin = Vector2i(0, -32)
+0:2/0/custom_data_0 = true
+1:2/0 = 0
+1:2/0/texture_origin = Vector2i(0, -32)
+1:2/0/modulate = Color(1, 1, 1, 0.72156864)
+1:2/0/custom_data_0 = true
+2:2/0 = 0
+2:2/0/texture_origin = Vector2i(0, -32)
+2:2/0/modulate = Color(1, 1, 1, 0.72156864)
+2:2/0/custom_data_0 = true
+
+[resource]
+tile_shape = 1
+tile_layout = 5
+tile_size = Vector2i(128, 64)
+custom_data_layer_0/name = "passable"
+custom_data_layer_0/type = 1
+sources/0 = SubResource("TileSetScenesCollectionSource_wr5xb")
+sources/2 = SubResource("TileSetAtlasSource_wr5xb")
+sources/1 = SubResource("TileSetAtlasSource_7g5o0")

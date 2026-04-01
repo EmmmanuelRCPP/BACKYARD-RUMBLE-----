@@ -1,0 +1,57 @@
+[gd_scene load_steps=15 format=3 uid="uid://besdmx7neh882"]
+
+[ext_resource type="Script" uid="uid://c4n3c743ld7b8" path="res://UI/unit_menu.gd" id="1_vd8ua"]
+[ext_resource type="PackedScene" uid="uid://b8222u41jwoxc" path="res://UI/button.tscn" id="2_77fuy"]
+[ext_resource type="Texture2D" uid="uid://i4slcqu3v1on" path="res://art/UI/unitMenu/attack_B.png" id="3_45boh"]
+[ext_resource type="Texture2D" uid="uid://cplhsaac63el" path="res://art/UI/unitMenu/move_B.png" id="3_be63r"]
+[ext_resource type="Texture2D" uid="uid://d2t0yojkf0jli" path="res://art/UI/unitMenu/p5.png" id="4_3fdyi"]
+[ext_resource type="Texture2D" uid="uid://cl8efmrgd1hoy" path="res://art/UI/unitMenu/p1.png" id="5_bw8a6"]
+[ext_resource type="Texture2D" uid="uid://dqcgnh5u5fidp" path="res://art/UI/unitMenu/p6.png" id="6_uar2m"]
+[ext_resource type="Texture2D" uid="uid://bhucnh5oi6bq5" path="res://art/UI/unitMenu/p3.png" id="7_2qxav"]
+[ext_resource type="Script" uid="uid://c1555mtaaof0o" path="res://UI/button.gd" id="7_30o23"]
+[ext_resource type="PackedScene" uid="uid://efxpfwugsxvl" path="res://test_environments/sfx_player.tscn" id="8_2qxav"]
+[ext_resource type="Texture2D" uid="uid://btnmwoo2xd530" path="res://art/UI/unitMenu/p.png" id="8_b8rn7"]
+[ext_resource type="Texture2D" uid="uid://bfa75nsxhapbd" path="res://art/UI/unitMenu/p4.png" id="9_45boh"]
+[ext_resource type="AudioStream" uid="uid://b3o1tklwnrlv6" path="res://music/sfx/rumble menu select.ogg" id="9_b8rn7"]
+[ext_resource type="AudioStream" uid="uid://dkn2fw140ndns" path="res://music/sfx/hover.ogg" id="10_45boh"]
+
+[node name="UnitMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_vd8ua")
+
+[node name="ButtonContainer" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BotonAtaque" parent="ButtonContainer" instance=ExtResource("2_77fuy")]
+layout_mode = 0
+texture_normal = ExtResource("3_45boh")
+texture_pressed = ExtResource("4_3fdyi")
+texture_hover = ExtResource("5_bw8a6")
+texture_disabled = ExtResource("6_uar2m")
+
+[node name="BotonMovimiento" type="TextureButton" parent="ButtonContainer"]
+layout_mode = 0
+offset_left = 164.0
+offset_top = 28.0
+offset_right = 302.0
+offset_bottom = 100.0
+texture_normal = ExtResource("3_be63r")
+texture_pressed = ExtResource("7_2qxav")
+texture_hover = ExtResource("8_b8rn7")
+texture_disabled = ExtResource("9_45boh")
+script = ExtResource("7_30o23")
+
+[node name="Hover" parent="ButtonContainer/BotonMovimiento" instance=ExtResource("8_2qxav")]
+stream = ExtResource("9_b8rn7")
+
+[node name="Click" parent="ButtonContainer/BotonMovimiento" instance=ExtResource("8_2qxav")]
+stream = ExtResource("10_45boh")
+volume_db = -10.0
+
+[connection signal="button_down" from="ButtonContainer/BotonMovimiento" to="ButtonContainer/BotonMovimiento" method="_on_button_down"]
+[connection signal="mouse_entered" from="ButtonContainer/BotonMovimiento" to="ButtonContainer/BotonMovimiento" method="_on_mouse_entered"]

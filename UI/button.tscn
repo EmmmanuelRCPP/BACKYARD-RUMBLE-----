@@ -1,0 +1,29 @@
+[gd_scene load_steps=9 format=3 uid="uid://b8222u41jwoxc"]
+
+[ext_resource type="Texture2D" uid="uid://c6hhc5y1xyegm" path="res://art/UI/unitMenu/gb3.png" id="1_33dqd"]
+[ext_resource type="Texture2D" uid="uid://cyomsd67nad4t" path="res://art/UI/unitMenu/gb2.png" id="2_u8jcg"]
+[ext_resource type="Texture2D" uid="uid://crpterwe68spc" path="res://art/UI/unitMenu/gb1.png" id="3_dtwr5"]
+[ext_resource type="Texture2D" uid="uid://bgx8r338r7l2k" path="res://art/UI/unitMenu/gb4.png" id="4_oaavh"]
+[ext_resource type="Script" uid="uid://c1555mtaaof0o" path="res://UI/button.gd" id="5_33dqd"]
+[ext_resource type="PackedScene" uid="uid://efxpfwugsxvl" path="res://test_environments/sfx_player.tscn" id="6_u8jcg"]
+[ext_resource type="AudioStream" uid="uid://b3o1tklwnrlv6" path="res://music/sfx/rumble menu select.ogg" id="7_dtwr5"]
+[ext_resource type="AudioStream" uid="uid://dkn2fw140ndns" path="res://music/sfx/hover.ogg" id="8_oaavh"]
+
+[node name="BotonAtaque" type="TextureButton"]
+offset_right = 64.0
+offset_bottom = 31.0
+texture_normal = ExtResource("1_33dqd")
+texture_pressed = ExtResource("2_u8jcg")
+texture_hover = ExtResource("3_dtwr5")
+texture_disabled = ExtResource("4_oaavh")
+script = ExtResource("5_33dqd")
+
+[node name="Hover" parent="." instance=ExtResource("6_u8jcg")]
+stream = ExtResource("7_dtwr5")
+
+[node name="Click" parent="." instance=ExtResource("6_u8jcg")]
+stream = ExtResource("8_oaavh")
+volume_db = -10.0
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

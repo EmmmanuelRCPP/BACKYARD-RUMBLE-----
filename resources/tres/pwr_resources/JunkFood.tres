@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Stat_Update_turn_and_battle" load_steps=3 format=3 uid="uid://bb2aran6anowl"]
+
+[ext_resource type="Texture2D" uid="uid://dl04a1eiawcgd" path="res://art/Pwrs/Pwr_s.png" id="1_1n8oh"]
+[ext_resource type="Script" uid="uid://ddh0wbj3jkkot" path="res://resources/pwr_scripts/on_turn_start_and_battle_begin_Chance.gd" id="1_sx5s3"]
+
+[resource]
+script = ExtResource("1_sx5s3")
+hp2 = -2
+attack2 = -2
+movement2 = -2
+luck2 = -2
+avoid2 = -2
+range2 = -2
+power_name = "Junk Food"
+hp = 6
+attack = 6
+avoid = 6
+luck = 6
+movement = 6
+attack_range = 6
+icon = ExtResource("1_1n8oh")
+description = "Tastes amazing. Huge boost, but lose 2 of all stats every turn."
+metadata/_custom_type_script = "uid://ddh0wbj3jkkot"

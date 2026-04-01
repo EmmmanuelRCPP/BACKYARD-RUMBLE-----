@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Stat_Update_battle_and_walk" load_steps=3 format=3 uid="uid://qo5ew0a7n8oo"]
+
+[ext_resource type="Script" uid="uid://by6kbw3c7oskj" path="res://resources/pwr_scripts/on_battle_begin_move.gd" id="1_gqegm"]
+[ext_resource type="Texture2D" uid="uid://butt0r785y53e" path="res://art/Pwrs/Pwr_fa.png" id="1_r5hj8"]
+
+[resource]
+script = ExtResource("1_gqegm")
+movement2 = 1
+hp = 0
+max_hp = 0
+attack = 0
+avoid = 0
+movement = -10
+attack_range = 0
+icon = ExtResource("1_r5hj8")
+description = "Starts with -10 movement. Lose movement but gain +1 movement every step taken."
+metadata/_custom_type_script = "uid://by6kbw3c7oskj"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Stat_Update_Battle_Start" load_steps=3 format=3 uid="uid://l7mr0n0ohd53"]
+
+[ext_resource type="Script" uid="uid://cx3atitu0ganv" path="res://resources/pwr_scripts/statupdate_on_battle_start.gd" id="1_bvuvd"]
+[ext_resource type="Texture2D" uid="uid://bsj486itcq7vb" path="res://art/Pwrs/Pwr_h.png" id="1_q7obt"]
+
+[resource]
+script = ExtResource("1_bvuvd")
+power_name = "Dice"
+hp = 0
+max_hp = 0
+attack = -1
+avoid = 0
+luck = 10
+movement = 0
+attack_range = 0
+icon = ExtResource("1_q7obt")
+description = " Roll the odds. Gain +10 luck but lose 1 ATK at the start of battle."
+metadata/_custom_type_script = "uid://cx3atitu0ganv"

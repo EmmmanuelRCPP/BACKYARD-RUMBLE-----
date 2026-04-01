@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1hlt3ib1qvk"]
+
+[ext_resource type="Script" uid="uid://1irkbyx644ys" path="res://title_screen.gd" id="1_ak2if"]
+[ext_resource type="Texture2D" uid="uid://c258lkxr14kc5" path="res://art/title.png" id="2_05l2w"]
+[ext_resource type="PackedScene" uid="uid://b8222u41jwoxc" path="res://UI/button.tscn" id="2_ig5kc"]
+[ext_resource type="Theme" uid="uid://uerdq36pewq8" path="res://UI/TEXT_THEME.tres" id="3_ig5kc"]
+
+[node name="TitleScreen" type="CanvasLayer"]
+script = ExtResource("1_ak2if")
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+texture = ExtResource("2_05l2w")
+
+[node name="Start" parent="." instance=ExtResource("2_ig5kc")]
+offset_left = 386.0
+offset_top = 349.0
+offset_right = 736.0
+offset_bottom = 499.0
+
+[node name="Quit" parent="." instance=ExtResource("2_ig5kc")]
+offset_left = 387.0
+offset_top = 488.0
+offset_right = 737.0
+offset_bottom = 638.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 404.0
+offset_top = 389.0
+offset_right = 752.0
+offset_bottom = 466.0
+theme = ExtResource("3_ig5kc")
+theme_override_font_sizes/font_size = 58
+text = "BEGIN GAME"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 460.0
+offset_top = 526.0
+offset_right = 676.0
+offset_bottom = 603.0
+theme = ExtResource("3_ig5kc")
+theme_override_font_sizes/font_size = 64
+text = "QUIT"
+horizontal_alignment = 1
+
+[connection signal="button_down" from="Start" to="." method="_on_start_button_down"]
+[connection signal="button_down" from="Quit" to="." method="_on_quit_button_down"]

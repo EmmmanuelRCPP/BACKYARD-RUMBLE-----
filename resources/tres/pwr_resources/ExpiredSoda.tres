@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Stat_Update_turn_start_chance" load_steps=3 format=3 uid="uid://t54yiu3tff4s"]
+
+[ext_resource type="Texture2D" uid="uid://bgff5brvfqvpt" path="res://art/Pwrs/Pwr_i.png" id="1_pi0v7"]
+[ext_resource type="Script" uid="uid://b4pibqpwehib7" path="res://resources/pwr_scripts/statupdate_on_turn_start_Chance.gd" id="2_hgl82"]
+
+[resource]
+script = ExtResource("2_hgl82")
+power_name = "Expired Soda"
+hp = 3
+max_hp = 50
+attack = 0
+avoid = 0
+movement = 0
+attack_range = 0
+icon = ExtResource("1_pi0v7")
+description = " Still fizzy… probably. 50% chance to heal or take 3 damage."
+metadata/_custom_type_script = "uid://b4pibqpwehib7"

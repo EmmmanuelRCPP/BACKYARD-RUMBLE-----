@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://vwpggmdtax2"]
+
+[ext_resource type="Script" uid="uid://cvsnbrfr2slfg" path="res://test_environments/pathfinding.gd" id="1_43e4b"]
+
+[node name="Pathfinding" type="Node"]
+script = ExtResource("1_43e4b")

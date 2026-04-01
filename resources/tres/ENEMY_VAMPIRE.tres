@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="UnitData" load_steps=6 format=3 uid="uid://d330ns3k7pmoe"]
+
+[ext_resource type="Resource" uid="uid://b7bijucq8phd" path="res://resources/tres/pwr_resources/Vampire.tres" id="1_qpysf"]
+[ext_resource type="Resource" uid="uid://cy4556hbf4grf" path="res://resources/tres/pwr_resources/Teleport.tres" id="2_w2jfc"]
+[ext_resource type="Resource" uid="uid://yn6gf672silm" path="res://resources/tres/pwr_resources/Regeneration.tres" id="3_gebay"]
+[ext_resource type="Script" uid="uid://duxf0qsqbsnxh" path="res://databases/unit_resource.gd" id="5_4uver"]
+[ext_resource type="Texture2D" uid="uid://dbmbxr1lq4ye8" path="res://art/unit/e1.png" id="5_qpysf"]
+
+[resource]
+script = ExtResource("5_4uver")
+unit_name = "Dracula"
+faction = 1
+ID = 11
+attack = 8
+avoid = 20
+luck = 30
+movement = 4
+attack_range = 3
+current_hp = 67
+inventory = Array[Resource]([ExtResource("1_qpysf"), ExtResource("2_w2jfc"), ExtResource("3_gebay"), ExtResource("3_gebay")])
+texture = ExtResource("5_qpysf")
+metadata/_custom_type_script = "uid://duxf0qsqbsnxh"

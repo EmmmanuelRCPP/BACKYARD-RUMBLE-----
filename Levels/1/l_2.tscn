@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=4 uid="uid://breceqdulh372"]
+
+[ext_resource type="PackedScene" uid="uid://fw6nxrdqdo01" path="res://test_environments/test_unit_movement_range.tscn" id="1_2h73v"]
+
+[node name="l2" type="Node"]
+
+[node name="TEST_Unit_Movement_Range" parent="." instance=ExtResource("1_2h73v")]
+
+[node name="GroundLayer" parent="TEST_Unit_Movement_Range/TileMaps/LayerContainer" index="0"]
+tile_map_data = PackedByteArray("AAD8/wEAAQACAAEAAAD9/wEAAQACAAEAAAD+/wEAAgACAAEAAAD//wEAAgACAAEAAAAAAAEAAgACAAEAAAABAAEAAQACAAEAAAACAAEAAQACAAEAAAD8//3/AQACAAEAAAD9//3/AQACAAEAAAD+//3/AgACAAEAAAD///3/AgACAAEAAAAAAP3/AgACAAEAAAABAP3/AQACAAEAAAACAP3/AQACAAEAAAD//wAAAgACAAAAAAD/////AgAAAAEAAAD///7/AgACAAAAAAD+//7/AgACAAAAAAD9//7/AgACAAAAAAD8//7/AgACAAAAAAD8////AgACAAAAAAD8/wAAAgACAAAAAAD9/wAAAgACAAAAAAD9////AgAAAAEAAAD+////AgACAAAAAAD+/wAAAgACAAAAAAAAAP7/AgACAAAAAAAAAP//AgACAAAAAAAAAAAAAgACAAAAAAABAAAAAgACAAAAAAABAP//AgAAAAEAAAABAP7/AgACAAAAAAACAP7/AgACAAAAAAACAP//AgACAAAAAAACAAAAAgACAAAAAAD+/wIAAgABAAAAAAD//wIAAgABAAAAAAAAAAIAAgABAAAAAAD+//z/AgABAAAAAAD///z/AgABAAAAAAAAAPz/AgABAAAAAAD8//v/AgAAAAAAAAACAPv/AgAAAAAAAAD8/wQAAgAAAAAAAAACAAQAAgAAAAAAAAABAAIAAgAAAAAAAAABAAMAAgAAAAAAAAAAAAMAAgAAAAAAAAD//wMAAgAAAAAAAAD+/wMAAgAAAAAAAAD9/wMAAgAAAAAAAAD9/wIAAgAAAAAAAAD8/wIAAgAAAAAAAAD8/wMAAgAAAAAAAAD9/wQAAgAAAAAAAAD+/wQAAgAAAAAAAAD//wQAAgAAAAAAAAAAAAQAAgAAAAAAAAABAAQAAgAAAAAAAAACAAMAAgAAAAAAAAACAAIAAgAAAAAAAAD///v/AgAAAAAAAAD+//v/AgAAAAAAAAD9//v/AgAAAAAAAAD9//z/AgAAAAAAAAD8//z/AgAAAAAAAAAAAPv/AgAAAAAAAAABAPv/AgAAAAAAAAABAPz/AgAAAAAAAAACAPz/AgAAAAAAAAA=")
+
+[node name="PropLayer" parent="TEST_Unit_Movement_Range/TileMaps/LayerContainer" index="2"]
+tile_map_data = PackedByteArray("AAD8/wEAAAAAAAAACQD9/wEAAAAAAAAACQD8//3/AAAAAAAACQD9//3/AAAAAAAACQABAP3/AAAAAAAACQACAP3/AAAAAAAACQABAAEAAAAAAAAACQACAAEAAAAAAAAACQA=")
+
+[node name="UnitLayer" parent="TEST_Unit_Movement_Range/TileMaps/LayerContainer" index="3"]
+tile_map_data = PackedByteArray("AAD9/wMAAgAAAAAAAAD//wMAAgABAAAAAAABAAMAAgACAAAAAAD8////AgAAAAEAAAACAP//AgABAAEAAAD9//v/AgACAAEAAAABAPv/AgACAAEAAAA=")
+
+[node name="UnitStatus" parent="TEST_Unit_Movement_Range/UI" index="1"]
+offset_right = 7570.0
+offset_bottom = 4909.0
+
+[node name="PreparationsUI" parent="TEST_Unit_Movement_Range" index="4"]
+visible = false
+
+[editable path="TEST_Unit_Movement_Range"]
+[editable path="TEST_Unit_Movement_Range/TileMaps"]
+[editable path="TEST_Unit_Movement_Range/UI/UnitMenu"]
+[editable path="TEST_Unit_Movement_Range/UI/UnitStatus"]
+[editable path="TEST_Unit_Movement_Range/PreparationsUI"]
+[editable path="TEST_Unit_Movement_Range/CanvasLayer/Background"]

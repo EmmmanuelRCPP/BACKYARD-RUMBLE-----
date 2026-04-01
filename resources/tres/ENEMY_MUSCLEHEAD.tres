@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="UnitData" load_steps=6 format=3 uid="uid://bvbvpf3vgvgxf"]
+
+[ext_resource type="Resource" uid="uid://b0pbmseybxyap" path="res://resources/tres/pwr_resources/Workout Tape.tres" id="1_lhnqj"]
+[ext_resource type="Resource" uid="uid://b6ws8bueck0j8" path="res://resources/tres/pwr_resources/Real Rage.tres" id="2_qkoyn"]
+[ext_resource type="Resource" uid="uid://bb2aran6anowl" path="res://resources/tres/pwr_resources/JunkFood.tres" id="3_t0w58"]
+[ext_resource type="Script" uid="uid://duxf0qsqbsnxh" path="res://databases/unit_resource.gd" id="4_qrtfw"]
+[ext_resource type="Texture2D" uid="uid://dk32qhpvu6mty" path="res://art/unit/e2.png" id="5_lhnqj"]
+
+[resource]
+script = ExtResource("4_qrtfw")
+unit_name = "Chuck"
+faction = 1
+ID = 10
+attack = 1
+avoid = 1
+movement = 3
+current_hp = 40
+inventory = Array[Resource]([ExtResource("1_lhnqj"), ExtResource("2_qkoyn"), ExtResource("2_qkoyn"), ExtResource("3_t0w58")])
+texture = ExtResource("5_lhnqj")
+metadata/_custom_type_script = "uid://duxf0qsqbsnxh"

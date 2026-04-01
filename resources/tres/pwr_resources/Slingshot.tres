@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Stat_Update_Battle_Start" load_steps=3 format=3 uid="uid://df07b17ileh54"]
+
+[ext_resource type="Texture2D" uid="uid://c6j1xrs7o58ni" path="res://art/Pwrs/Pwr_b.png" id="1_7cy8x"]
+[ext_resource type="Script" uid="uid://cx3atitu0ganv" path="res://resources/pwr_scripts/statupdate_on_battle_start.gd" id="1_kaqls"]
+
+[resource]
+script = ExtResource("1_kaqls")
+power_name = "Slingshot"
+hp = 0
+max_hp = 0
+attack = 0
+avoid = -5
+movement = -1
+attack_range = 2
+icon = ExtResource("1_7cy8x")
+description = " Old reliable. +2 ATK_range at the start of battle but -5 avoid and -1 movement."
+metadata/_custom_type_script = "uid://cx3atitu0ganv"

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="UnitData" load_steps=6 format=3 uid="uid://c6oon317tcamq"]
+
+[ext_resource type="Resource" uid="uid://jqhjcwsej10d" path="res://resources/tres/pwr_resources/PackedLunch.tres" id="1_1oylt"]
+[ext_resource type="Resource" uid="uid://t54yiu3tff4s" path="res://resources/tres/pwr_resources/ExpiredSoda.tres" id="2_80t3m"]
+[ext_resource type="Script" uid="uid://duxf0qsqbsnxh" path="res://databases/unit_resource.gd" id="2_eotb8"]
+[ext_resource type="Resource" uid="uid://df07b17ileh54" path="res://resources/tres/pwr_resources/Slingshot.tres" id="3_d7shw"]
+[ext_resource type="Texture2D" uid="uid://dk32qhpvu6mty" path="res://art/unit/e2.png" id="3_p7xou"]
+
+[resource]
+script = ExtResource("2_eotb8")
+unit_name = "Hooligan"
+faction = 1
+ID = 5
+attack = 3
+avoid = 15
+current_hp = 10
+inventory = Array[Resource]([ExtResource("1_1oylt"), ExtResource("2_80t3m"), ExtResource("3_d7shw")])
+texture = ExtResource("3_p7xou")
+metadata/_custom_type_script = "uid://duxf0qsqbsnxh"

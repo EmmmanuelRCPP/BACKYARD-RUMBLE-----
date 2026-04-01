@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="UnitData" load_steps=3 format=3 uid="uid://c5nrlmp1sjnwd"]
+
+[ext_resource type="Script" uid="uid://duxf0qsqbsnxh" path="res://databases/unit_resource.gd" id="1_n75v0"]
+[ext_resource type="Texture2D" uid="uid://iuqpys81xuh2" path="res://art/unit/u1.png" id="2_54ebt"]
+
+[resource]
+script = ExtResource("1_n75v0")
+ID = 1
+luck = 5
+texture = ExtResource("2_54ebt")
+metadata/_custom_type_script = "uid://duxf0qsqbsnxh"

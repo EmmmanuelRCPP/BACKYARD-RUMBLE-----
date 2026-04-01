@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Stat_Update_Battle_Start" load_steps=3 format=3 uid="uid://b0pbmseybxyap"]
+
+[ext_resource type="Script" uid="uid://cx3atitu0ganv" path="res://resources/pwr_scripts/statupdate_on_battle_start.gd" id="1_7x523"]
+[ext_resource type="Texture2D" uid="uid://bmg8abp34wto2" path="res://art/Pwrs/Pwr_k.png" id="1_wn471"]
+
+[resource]
+script = ExtResource("1_7x523")
+power_name = "Workout Tape"
+hp = 0
+max_hp = 0
+attack = 25
+avoid = 0
+luck = -100
+attack_range = 0
+icon = ExtResource("1_wn471")
+description = "Train like a beast. Massive +25 ATK but completely terrible luck."
+metadata/_custom_type_script = "uid://cx3atitu0ganv"

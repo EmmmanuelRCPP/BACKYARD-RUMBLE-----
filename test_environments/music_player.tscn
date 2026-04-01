@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://dc6tr253wyu0g"]
+
+[ext_resource type="Script" uid="uid://bikvti1oj78uu" path="res://music_player.gd" id="1_stio2"]
+[ext_resource type="PackedScene" uid="uid://efxpfwugsxvl" path="res://test_environments/sfx_player.tscn" id="2_lscuw"]
+[ext_resource type="AudioStream" uid="uid://cnpecot4xtpc5" path="res://music/sfx/victory.ogg" id="3_t0yxd"]
+[ext_resource type="AudioStream" uid="uid://qsy8f3pn06bi" path="res://music/sfx/loss.ogg" id="4_t0yxd"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer"]
+script = ExtResource("1_stio2")
+
+[node name="SFX" type="Node" parent="."]
+
+[node name="Win" parent="SFX" instance=ExtResource("2_lscuw")]
+stream = ExtResource("3_t0yxd")
+
+[node name="Lose" parent="SFX" instance=ExtResource("2_lscuw")]
+stream = ExtResource("4_t0yxd")

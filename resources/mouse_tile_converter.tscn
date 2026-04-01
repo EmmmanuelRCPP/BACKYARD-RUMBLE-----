@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxixcpcamc5yh"]
+
+[ext_resource type="Script" uid="uid://drffktku4pqs0" path="res://resources/mouse_tile_converter.gd" id="1_vtxe3"]
+[ext_resource type="Texture2D" uid="uid://citio215dqvt1" path="res://art/tile/PLACEHOLDER_SelectBlock.png" id="2_mich5"]
+
+[node name="Mouse_tile_converter" type="Node2D"]
+script = ExtResource("1_vtxe3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+z_index = 1
+texture = ExtResource("2_mich5")
+region_enabled = true
+region_rect = Rect2(0, 0, 18, 9)

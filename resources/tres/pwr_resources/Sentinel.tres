@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Stat_Update_Battle_Start" load_steps=3 format=3 uid="uid://7cutv5fjcri8"]
+
+[ext_resource type="Script" uid="uid://cx3atitu0ganv" path="res://resources/pwr_scripts/statupdate_on_battle_start.gd" id="1_4ktrj"]
+[ext_resource type="Texture2D" uid="uid://dqakbq4qkng3a" path="res://art/Pwrs/Pwr_ea.png" id="1_w718k"]
+
+[resource]
+script = ExtResource("1_4ktrj")
+power_name = "Sentinel"
+hp = 0
+max_hp = 0
+attack = 0
+avoid = 0
+movement = -10
+attack_range = 10
+icon = ExtResource("1_w718k")
+description = "Stand your ground. Massive range but barely able to move."
+metadata/_custom_type_script = "uid://cx3atitu0ganv"

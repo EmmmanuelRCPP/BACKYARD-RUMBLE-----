@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Stat_Update_Battle_Start" load_steps=3 format=3 uid="uid://ds0ixr20chiaw"]
+
+[ext_resource type="Texture2D" uid="uid://bnqmhm8ahy1pe" path="res://art/Pwrs/Pwr_d.png" id="1_aqe2h"]
+[ext_resource type="Script" uid="uid://cx3atitu0ganv" path="res://resources/pwr_scripts/statupdate_on_battle_start.gd" id="1_souuy"]
+
+[resource]
+script = ExtResource("1_souuy")
+power_name = "\"Maruto\" manga"
+hp = 0
+max_hp = 0
+attack = 0
+movement = 1
+attack_range = 0
+icon = ExtResource("1_aqe2h")
+description = " A classic shonen manga. +5 avoid and +1 movement at the start of battle."
+metadata/_custom_type_script = "uid://cx3atitu0ganv"

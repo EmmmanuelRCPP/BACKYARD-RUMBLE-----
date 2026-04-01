@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://da8538gukmrwy"]
+
+[ext_resource type="Texture2D" uid="uid://butog0pn161wi" path="res://art/tile/cone.png" id="1_y5lw3"]
+
+[node name="Cone" type="Sprite2D"]
+position = Vector2(0, -10)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_y5lw3")

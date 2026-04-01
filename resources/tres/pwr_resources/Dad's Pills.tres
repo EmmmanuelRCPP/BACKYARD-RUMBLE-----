@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Stat_Update_turn_start_chance" load_steps=3 format=3 uid="uid://c6vssxamdudtw"]
+
+[ext_resource type="Texture2D" uid="uid://bnxftsfmxlm0p" path="res://art/Pwrs/Pwr_g.png" id="1_2vo86"]
+[ext_resource type="Script" uid="uid://b4pibqpwehib7" path="res://resources/pwr_scripts/statupdate_on_turn_start_Chance.gd" id="2_vte4p"]
+
+[resource]
+script = ExtResource("2_vte4p")
+power_name = "Dad’s pills"
+hp = 0
+max_hp = 50
+avoid = 0
+movement = 0
+attack_range = 0
+icon = ExtResource("1_2vo86")
+description = " No idea what these do. Each turn has a 50% chance to gain +5 ATK."
+metadata/_custom_type_script = "uid://b4pibqpwehib7"

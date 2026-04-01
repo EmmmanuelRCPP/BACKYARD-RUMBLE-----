@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="UnitData" load_steps=5 format=3 uid="uid://deyqibw36u2w0"]
+
+[ext_resource type="Script" uid="uid://duxf0qsqbsnxh" path="res://databases/unit_resource.gd" id="1_ipm5k"]
+[ext_resource type="Resource" uid="uid://yn6gf672silm" path="res://resources/tres/pwr_resources/Regeneration.tres" id="1_o16qc"]
+[ext_resource type="Resource" uid="uid://bjtidayef0wkh" path="res://resources/tres/pwr_resources/PBJ.tres" id="2_h8ti1"]
+[ext_resource type="Texture2D" uid="uid://dbmbxr1lq4ye8" path="res://art/unit/e1.png" id="3_cnagi"]
+
+[resource]
+script = ExtResource("1_ipm5k")
+unit_name = "Punk"
+faction = 1
+ID = 4
+movement = 3
+attack_range = 2
+current_hp = 15
+inventory = Array[Resource]([ExtResource("1_o16qc"), ExtResource("2_h8ti1")])
+texture = ExtResource("3_cnagi")
+metadata/_custom_type_script = "uid://duxf0qsqbsnxh"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Stat_Update_Battle_Start" load_steps=3 format=3 uid="uid://cy4556hbf4grf"]
+
+[ext_resource type="Script" uid="uid://cx3atitu0ganv" path="res://resources/pwr_scripts/statupdate_on_battle_start.gd" id="1_4l182"]
+[ext_resource type="Texture2D" uid="uid://dtru1ql2de47" path="res://art/Pwrs/Pwr_t.png" id="1_ispkp"]
+
+[resource]
+script = ExtResource("1_4l182")
+power_name = "Teleport"
+hp = 0
+max_hp = 0
+attack = -5
+luck = 30
+movement = 10
+attack_range = 0
+icon = ExtResource("1_ispkp")
+description = "Nothing personal. High movement and luck, but reduced ATK."
+metadata/_custom_type_script = "uid://cx3atitu0ganv"

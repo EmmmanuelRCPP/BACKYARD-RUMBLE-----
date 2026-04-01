@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://w68cg0c7oxf3"]
+
+[ext_resource type="Script" uid="uid://byielhef46tcy" path="res://UI/screen_transition.gd" id="1_y3jto"]
+[ext_resource type="Shader" uid="uid://k2bjntj7lerj" path="res://resources/shaders/transition.gdshader" id="2_8x638"]
+[ext_resource type="Texture2D" uid="uid://i38pqs7dvu7a" path="res://art/UI/unit display/ready_B.png" id="3_80sw1"]
+[ext_resource type="Theme" uid="uid://uerdq36pewq8" path="res://UI/TEXT_THEME.tres" id="4_8x638"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_omqdh"]
+shader = ExtResource("2_8x638")
+shader_parameter/progress = 0.0
+shader_parameter/width = 0.5
+shader_parameter/tile_texture = ExtResource("3_80sw1")
+shader_parameter/tile_pixel_size = 32.0
+shader_parameter/tile_grown_scale = 2.0
+shader_parameter/transition_texture = ExtResource("3_80sw1")
+
+[node name="SCREEN_TRANSITION" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1_y3jto")
+
+[node name="TextureRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_omqdh")
+offset_left = -9.0
+offset_top = -11.0
+offset_right = 1160.0
+offset_bottom = 659.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="txt" type="RichTextLabel" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 2.0
+offset_top = 9.0
+offset_right = 1155.0
+offset_bottom = 655.0
+mouse_filter = 2
+theme = ExtResource("4_8x638")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 128
+bbcode_enabled = true
+text = "[wave]hola[wave]"
+horizontal_alignment = 1
+vertical_alignment = 1

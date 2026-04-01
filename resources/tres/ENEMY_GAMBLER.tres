@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="UnitData" load_steps=6 format=3 uid="uid://xn5jo1pmbof4"]
+
+[ext_resource type="Resource" uid="uid://bp8yrptci1pts" path="res://resources/tres/pwr_resources/Energy Rush.tres" id="1_unjap"]
+[ext_resource type="Resource" uid="uid://bfeomxi1hptoe" path="res://resources/tres/pwr_resources/Yoyo.tres" id="2_ue0en"]
+[ext_resource type="Resource" uid="uid://ds0ixr20chiaw" path="res://resources/tres/pwr_resources/Maruto.tres" id="3_y6obx"]
+[ext_resource type="Texture2D" uid="uid://dk32qhpvu6mty" path="res://art/unit/e2.png" id="5_cy4q6"]
+[ext_resource type="Script" uid="uid://duxf0qsqbsnxh" path="res://databases/unit_resource.gd" id="5_ry3qw"]
+
+[resource]
+script = ExtResource("5_ry3qw")
+unit_name = "Gambler"
+faction = 1
+ID = 8
+attack = 6
+avoid = 10
+luck = 5
+movement = 3
+attack_range = 2
+current_hp = 5
+inventory = Array[Resource]([ExtResource("1_unjap"), ExtResource("2_ue0en"), ExtResource("2_ue0en"), ExtResource("3_y6obx")])
+texture = ExtResource("5_cy4q6")
+metadata/_custom_type_script = "uid://duxf0qsqbsnxh"

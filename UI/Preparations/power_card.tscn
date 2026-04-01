@@ -1,0 +1,30 @@
+[gd_scene load_steps=9 format=3 uid="uid://dr7qcbg4itpk5"]
+
+[ext_resource type="Texture2D" uid="uid://d4j2ax8ewu4no" path="res://art/UI/card.png" id="1_66oko"]
+[ext_resource type="Script" uid="uid://etok8fk2n3rn" path="res://UI/Preparations/power_card.gd" id="1_73s3y"]
+[ext_resource type="Texture2D" uid="uid://75jhfcw4fucv" path="res://art/UI/unitMenu/cardDisabled.png" id="2_2vedf"]
+[ext_resource type="Texture2D" uid="uid://b4dnw0ssib45o" path="res://art/UI/unitMenu/cardPressed.png" id="2_q06lf"]
+[ext_resource type="Texture2D" uid="uid://5cjbpa5ou31n" path="res://art/UI/unitMenu/cardHover.png" id="3_2vedf"]
+[ext_resource type="PackedScene" uid="uid://efxpfwugsxvl" path="res://test_environments/sfx_player.tscn" id="3_msqtg"]
+[ext_resource type="AudioStream" uid="uid://dkn2fw140ndns" path="res://music/sfx/hover.ogg" id="4_66oko"]
+[ext_resource type="Texture2D" uid="uid://cyc5dqwo36p6d" path="res://art/Pwrs/Pwr_w.png" id="6_a5r05"]
+
+[node name="PowerCard" type="TextureButton"]
+offset_right = 77.0
+offset_bottom = 74.0
+texture_normal = ExtResource("1_66oko")
+texture_pressed = ExtResource("3_2vedf")
+texture_hover = ExtResource("2_q06lf")
+texture_disabled = ExtResource("2_2vedf")
+script = ExtResource("1_73s3y")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(40.000004, 39.000004)
+texture = ExtResource("6_a5r05")
+
+[node name="Hover" parent="." instance=ExtResource("3_msqtg")]
+stream = ExtResource("4_66oko")
+volume_db = -5.0
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

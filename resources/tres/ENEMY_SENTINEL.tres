@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="UnitData" load_steps=7 format=3 uid="uid://ddykkhpk38iml"]
+
+[ext_resource type="Resource" uid="uid://7cutv5fjcri8" path="res://resources/tres/pwr_resources/Sentinel.tres" id="1_r7a0d"]
+[ext_resource type="Resource" uid="uid://b7bijucq8phd" path="res://resources/tres/pwr_resources/Vampire.tres" id="2_5xpcf"]
+[ext_resource type="Resource" uid="uid://7qfobbls34ng" path="res://resources/tres/pwr_resources/Rage.tres" id="3_464up"]
+[ext_resource type="Script" uid="uid://duxf0qsqbsnxh" path="res://databases/unit_resource.gd" id="3_r7a0d"]
+[ext_resource type="Resource" uid="uid://dr7xsg2bvqq4" path="res://resources/tres/pwr_resources/HappyHour.tres" id="4_1r5wl"]
+[ext_resource type="Texture2D" uid="uid://dbmbxr1lq4ye8" path="res://art/unit/e1.png" id="4_5xpcf"]
+
+[resource]
+script = ExtResource("3_r7a0d")
+unit_name = "Sniper"
+faction = 1
+ID = 7
+attack = 3
+luck = 50
+movement = 1
+attack_range = 2
+current_hp = 10
+inventory = Array[Resource]([ExtResource("1_r7a0d"), ExtResource("2_5xpcf"), ExtResource("3_464up"), ExtResource("4_1r5wl")])
+texture = ExtResource("4_5xpcf")
+metadata/_custom_type_script = "uid://duxf0qsqbsnxh"

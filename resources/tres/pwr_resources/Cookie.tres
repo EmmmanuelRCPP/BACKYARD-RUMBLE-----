@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Stat_Update_Battle_Start" load_steps=3 format=3 uid="uid://be8jka3w7c7lc"]
+
+[ext_resource type="Script" uid="uid://cx3atitu0ganv" path="res://resources/pwr_scripts/statupdate_on_battle_start.gd" id="1_bve7g"]
+[ext_resource type="Texture2D" uid="uid://yh1bv54mllvh" path="res://art/Pwrs/Pwr_ia.png" id="1_du7ae"]
+
+[resource]
+script = ExtResource("1_bve7g")
+power_name = "Cookie"
+hp = 5
+max_hp = 0
+attack = 0
+avoid = 0
+movement = 0
+attack_range = 0
+icon = ExtResource("1_du7ae")
+description = "Yum a Cookie!. +5 HP at start of battle."
+metadata/_custom_type_script = "uid://cx3atitu0ganv"

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://q7yoykbob8nx"]
+
+[ext_resource type="Script" uid="uid://cs8gimuvi1dc1" path="res://test_environments/gen_test.gd" id="1_ep0cx"]
+
+[node name="GenTest" type="Node"]
+script = ExtResource("1_ep0cx")

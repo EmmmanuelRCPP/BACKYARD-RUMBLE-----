@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="UnitData" load_steps=5 format=3 uid="uid://dfg7jypov4mr6"]
+
+[ext_resource type="Resource" uid="uid://2gw170evo8ov" path="res://resources/tres/pwr_resources/BaseBallBat.tres" id="1_ad8yn"]
+[ext_resource type="Resource" uid="uid://c6vssxamdudtw" path="res://resources/tres/pwr_resources/Dad's Pills.tres" id="2_1ngtb"]
+[ext_resource type="Script" uid="uid://duxf0qsqbsnxh" path="res://databases/unit_resource.gd" id="2_ad8yn"]
+[ext_resource type="Texture2D" uid="uid://bjy21u6a0lal3" path="res://art/unit/e3.png" id="3_2yqm2"]
+
+[resource]
+script = ExtResource("2_ad8yn")
+unit_name = "Ruffian"
+faction = 1
+ID = 6
+max_hp = 30
+attack = 8
+avoid = 0
+luck = 10
+movement = 2
+current_hp = 30
+inventory = Array[Resource]([ExtResource("1_ad8yn"), ExtResource("2_1ngtb")])
+texture = ExtResource("3_2yqm2")
+metadata/_custom_type_script = "uid://duxf0qsqbsnxh"

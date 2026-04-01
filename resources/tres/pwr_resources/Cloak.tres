@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Stat_Update_battle_and_walk" load_steps=3 format=3 uid="uid://dwjk164tvub0k"]
+
+[ext_resource type="Texture2D" uid="uid://d2jgx1atmsdyk" path="res://art/Pwrs/Pwr_q.png" id="1_7ftoj"]
+[ext_resource type="Script" uid="uid://by6kbw3c7oskj" path="res://resources/pwr_scripts/on_battle_begin_move.gd" id="1_ocxrl"]
+
+[resource]
+script = ExtResource("1_ocxrl")
+avoid2 = -20
+power_name = "Invisibility Cloak"
+hp = 0
+max_hp = 0
+attack = 0
+avoid = 100
+movement = 0
+attack_range = 0
+icon = ExtResource("1_7ftoj")
+description = "Can’t see you… yet. Start untouchable, but each step reduces avoid."
+metadata/_custom_type_script = "uid://by6kbw3c7oskj"

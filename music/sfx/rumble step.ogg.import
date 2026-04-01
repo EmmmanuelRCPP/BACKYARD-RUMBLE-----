@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bctnl0ndtfq1m"
+path="res://.godot/imported/rumble step.ogg-2308bf1c272303ab959269d48e9fd285.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/sfx/rumble step.ogg"
+dest_files=["res://.godot/imported/rumble step.ogg-2308bf1c272303ab959269d48e9fd285.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

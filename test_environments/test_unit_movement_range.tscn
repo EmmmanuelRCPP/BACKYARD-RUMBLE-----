@@ -1,0 +1,186 @@
+[gd_scene load_steps=17 format=4 uid="uid://fw6nxrdqdo01"]
+
+[ext_resource type="PackedScene" uid="uid://s1sqkg7o041p" path="res://maps/tile_maps.tscn" id="1_2rafa"]
+[ext_resource type="Script" uid="uid://dn1jurrcjipg1" path="res://test_environments/test_unit_movement_range.gd" id="1_7fu7p"]
+[ext_resource type="PackedScene" uid="uid://8wp8ro6p6twp" path="res://test_environments/unittest.tscn" id="2_ru5uc"]
+[ext_resource type="PackedScene" uid="uid://bxixcpcamc5yh" path="res://resources/mouse_tile_converter.tscn" id="3_7fu7p"]
+[ext_resource type="PackedScene" uid="uid://bpkvhgfk2184v" path="res://test_environments/camera.tscn" id="5_58ad4"]
+[ext_resource type="PackedScene" uid="uid://besdmx7neh882" path="res://UI/unit_menu.tscn" id="5_bjyo1"]
+[ext_resource type="PackedScene" uid="uid://dp14xsvsiowh5" path="res://UI/unit_status.tscn" id="6_je2uc"]
+[ext_resource type="PackedScene" uid="uid://rr6syigxhn4" path="res://UI/Preparations/preparations_ui.tscn" id="7_fjf7q"]
+[ext_resource type="PackedScene" uid="uid://vwpggmdtax2" path="res://test_environments/pathfinding.tscn" id="7_u60e7"]
+[ext_resource type="PackedScene" uid="uid://frou5ogb047q" path="res://UI/background.tscn" id="8_ulwdi"]
+[ext_resource type="PackedScene" uid="uid://b8222u41jwoxc" path="res://UI/button.tscn" id="8_ynswd"]
+[ext_resource type="PackedScene" uid="uid://b3vgi0axy33ok" path="res://test_environments/turn_manager.tscn" id="9_0oc0y"]
+[ext_resource type="Theme" uid="uid://uerdq36pewq8" path="res://UI/TEXT_THEME.tres" id="9_rmsuc"]
+
+[sub_resource type="Animation" id="Animation_mbwte"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ButtonContainer:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(68.449, 128)]
+}
+
+[sub_resource type="Animation" id="Animation_58ad4"]
+resource_name = "appear"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ButtonContainer:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(68.449, 128), Vector2(68.44913, 51.3369)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ynswd"]
+_data = {
+&"RESET": SubResource("Animation_mbwte"),
+&"appear": SubResource("Animation_58ad4")
+}
+
+[node name="TEST_Unit_Movement_Range" type="Node2D"]
+script = ExtResource("1_7fu7p")
+gen_unit = ExtResource("2_ru5uc")
+difficulty = 1
+
+[node name="TileMaps" parent="." instance=ExtResource("1_2rafa")]
+
+[node name="GroundLayer" parent="TileMaps/LayerContainer" index="0"]
+tile_map_data = PackedByteArray("AAAEAAEAAgAAAAAAAAAEAAAAAgAAAAAAAAAEAP//AgABAAAAAAAEAP7/AgAAAAAAAAAFAP7/AgAAAAAAAAAFAP//AgAAAAAAAAAFAAAAAgABAAAAAAAFAAEAAgAAAAAAAAAGAP//AgAAAAAAAAAGAP7/AgAAAAAAAAAGAAAAAgAAAAAAAAAGAAEAAgAAAAAAAAAHAP7/AgABAAEAAAAHAAAAAgABAAEAAAAHAAEAAgACAAAAAAAHAP//AgACAAAAAAAIAP7/AgACAAEAAAAIAP//AgACAAEAAAAIAAAAAgACAAEAAAAIAAEAAgACAAEAAAAJAAEAAgABAAAAAAAJAAAAAgABAAAAAAAJAP//AgABAAAAAAAKAP//AgABAAAAAAAKAP7/AgABAAAAAAAJAP7/AgABAAAAAAAKAAAAAgABAAAAAAAKAAEAAgABAAAAAAD6//7/AgACAAEAAAD6////AgAAAAIAAAD6/wAAAgAAAAIAAAD6/wEAAgAAAAIAAAD7//7/AgACAAEAAAD7////AgACAAEAAAD7/wAAAgACAAEAAAD7/wEAAgACAAEAAAD8//7/AgACAAAAAAD8////AgACAAAAAAD8/wAAAgACAAAAAAD8/wEAAgACAAAAAAD9//7/AgAAAAAAAAD9////AgAAAAAAAAD9/wAAAgAAAAAAAAD9/wEAAgAAAAAAAAD+//7/AgAAAAAAAAD+////AgAAAAAAAAD+/wAAAgAAAAAAAAD+/wEAAgAAAAAAAAD///7/AgAAAAAAAAD/////AgAAAAAAAAD//wAAAgAAAAAAAAD//wEAAgAAAAAAAAAAAP7/AgAAAAAAAAAAAP//AgAAAAAAAAAAAAAAAgAAAAAAAAAAAAEAAgAAAAAAAAABAP7/AgAAAAAAAAABAP//AgAAAAAAAAABAAAAAgAAAAAAAAABAAEAAgAAAAAAAAACAP7/AgAAAAAAAAACAAEAAgAAAAAAAAADAP7/AgAAAAAAAAADAAEAAgAAAAAAAADz//z/AgACAAEAAADz//3/AgACAAEAAADz//7/AgACAAEAAADz////AgACAAEAAADz/wAAAgACAAEAAAD0//z/AgACAAEAAAD0//3/AgACAAEAAAD0//7/AgAAAAIAAAD0////AgACAAEAAAD0/wAAAgAAAAIAAAD1//z/AgACAAEAAAD1//3/AgAAAAIAAAD1//7/AgAAAAIAAAD1////AgACAAEAAAD1/wAAAgAAAAIAAAD2//z/AgACAAEAAAD2//3/AgAAAAIAAAD2//7/AgACAAEAAAD2////AgACAAEAAAD2/wAAAgAAAAIAAAD3//z/AgACAAEAAAD3//3/AgACAAEAAAD3//7/AgACAAEAAAD3////AgACAAEAAAD3/wAAAgAAAAIAAAD4//z/AgACAAEAAAD4//3/AgAAAAIAAAD4//7/AgAAAAIAAAD4////AgACAAEAAAD4/wAAAgACAAEAAAD5//z/AgACAAEAAAD5//3/AgACAAEAAAD5//7/AgAAAAIAAAD5////AgAAAAIAAAD5/wAAAgACAAEAAAD6//z/AgACAAEAAAD6//3/AgACAAEAAAD7//z/AgACAAEAAAD7//3/AgACAAEAAAD8//z/AgACAAEAAAD8//3/AgACAAAAAAD9//z/AgACAAEAAAD9//3/AgACAAAAAADz/wEAAgACAAEAAADz/wIAAgACAAEAAADz/wMAAgACAAEAAAD0/wEAAgACAAEAAAD0/wIAAgACAAEAAAD0/wMAAgACAAEAAAD1/wEAAgAAAAIAAAD1/wIAAgAAAAIAAAD1/wMAAgACAAEAAAD2/wEAAgACAAEAAAD2/wIAAgAAAAIAAAD2/wMAAgACAAEAAAD3/wEAAgAAAAIAAAD3/wIAAgAAAAIAAAD3/wMAAgACAAEAAAD4/wEAAgAAAAIAAAD4/wIAAgACAAEAAAD4/wMAAgAAAAIAAAD5/wEAAgACAAEAAAD5/wIAAgAAAAIAAAD5/wMAAgACAAEAAAD6/wIAAgACAAEAAAD6/wMAAgACAAEAAAD7/wIAAgACAAEAAAD7/wMAAgACAAEAAAD8/wIAAgACAAAAAAD8/wMAAgACAAEAAAD9/wIAAgACAAAAAAD9/wMAAgACAAEAAAACAAAAAQAAAAIAAAACAP//AQAAAAIAAAADAP//AQAAAAIAAAADAAAAAQAAAAIAAAAHAAIAAgABAAEAAAAHAP3/AgACAAAAAAAIAAIAAgAAAAIAAAAJAAIAAgABAAAAAAAKAAIAAgABAAAAAAAKAAMAAgABAAAAAAD+/wMAAgACAAEAAAD//wMAAgACAAEAAAAAAAMAAgACAAEAAAABAAMAAgACAAEAAAACAAMAAgACAAEAAAADAAMAAgACAAEAAAAEAAMAAgACAAEAAAAFAAMAAgACAAEAAAAGAAMAAgACAAEAAAAHAAMAAgACAAEAAAAIAAMAAgACAAEAAAAJAAMAAgABAAAAAAD+//z/AgACAAEAAAD///z/AgACAAEAAAAAAPz/AgACAAEAAAABAPz/AgABAAEAAAACAPz/AgACAAEAAAADAPz/AgACAAEAAAAEAPz/AgACAAEAAAAFAPz/AgACAAEAAAAGAPz/AgACAAEAAAAHAPz/AgACAAEAAAAIAPz/AgACAAEAAAAJAPz/AgABAAAAAAAKAPz/AgABAAAAAAAKAP3/AgABAAAAAAAIAP3/AgACAAEAAAAJAP3/AgABAAAAAAAGAAIAAgACAAAAAAAFAAIAAgACAAAAAAAEAAIAAgACAAAAAAADAAIAAgACAAAAAAACAAIAAgACAAAAAAABAAIAAgACAAAAAAAAAAIAAgACAAAAAAD//wIAAgACAAAAAAD+/wIAAgACAAAAAAD+//3/AgACAAAAAAD///3/AgACAAAAAAAAAP3/AgACAAAAAAABAP3/AgACAAAAAAACAP3/AgACAAAAAAADAP3/AgACAAAAAAAEAP3/AgACAAAAAAAFAP3/AgACAAAAAAAGAP3/AgACAAAAAAABAPr/AgABAAAAAAACAPr/AgAAAAAAAAADAPr/AgABAAAAAAADAPn/AgAAAAAAAAACAPn/AgABAAAAAAABAPn/AgAAAAAAAAAAAPr/AgAAAAAAAAD///r/AgABAAAAAAAAAPn/AgABAAAAAAABAPv/AgABAAEAAAD///n/AgAAAAAAAAA=")
+
+[node name="PropLayer" parent="TileMaps/LayerContainer" index="2"]
+tile_map_data = PackedByteArray("AAADAAAAAAAAAAAACQADAP//AAAAAAAACQACAP//AAAAAAAACQACAAAAAAAAAAAACQA=")
+
+[node name="UnitLayer" parent="TileMaps/LayerContainer" index="3"]
+tile_map_data = PackedByteArray("AAD//wEAAgABAAAAAAD+/wIAAgABAAEAAAD9/wMAAgAAAAAAAAD9/wEAAgACAAAAAAA=")
+
+[node name="Mouse_tile_converter" parent="." instance=ExtResource("3_7fu7p")]
+
+[node name="Camera" parent="." instance=ExtResource("5_58ad4")]
+position = Vector2(11, -9)
+
+[node name="UI" type="CanvasLayer" parent="."]
+scale = Vector2(0.935, 0.935)
+transform = Transform2D(0.935, 0, 0, 0.935, 0, 0)
+
+[node name="UnitMenu" parent="UI" instance=ExtResource("5_bjyo1")]
+unique_name_in_owner = true
+offset_left = 642.78076
+offset_top = 344.385
+offset_right = 682.78076
+offset_bottom = 384.385
+
+[node name="ButtonContainer" parent="UI/UnitMenu" index="0"]
+offset_left = 68.449
+offset_top = 128.0
+offset_right = 108.449
+offset_bottom = 168.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UI/UnitMenu"]
+libraries = {
+&"": SubResource("AnimationLibrary_ynswd")
+}
+
+[node name="UnitStatus" parent="UI" instance=ExtResource("6_je2uc")]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 6872.0
+offset_bottom = 4174.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="EndTurn" parent="UI" instance=ExtResource("8_ynswd")]
+unique_name_in_owner = true
+offset_left = 16.042782
+offset_top = 603.20856
+offset_right = 366.0428
+offset_bottom = 753.20856
+scale = Vector2(0.5, 0.5)
+
+[node name="Label" type="Label" parent="UI/EndTurn"]
+layout_mode = 0
+offset_left = 40.64171
+offset_top = 40.64174
+offset_right = 315.64172
+offset_bottom = 117.64174
+theme = ExtResource("9_rmsuc")
+theme_override_font_sizes/font_size = 64
+text = "END TURN"
+
+[node name="PreparationsUI" parent="." instance=ExtResource("7_fjf7q")]
+follow_viewport_enabled = false
+
+[node name="p1" parent="PreparationsUI" index="4"]
+offset_top = 395.0
+offset_bottom = 545.0
+
+[node name="p2" parent="PreparationsUI" index="5"]
+offset_left = 969.0
+offset_top = 471.0
+offset_right = 1319.0
+offset_bottom = 621.0
+
+[node name="p3" parent="PreparationsUI" index="6"]
+offset_left = 969.0
+offset_top = 548.0
+offset_right = 1319.0
+offset_bottom = 698.0
+
+[node name="Label2" parent="PreparationsUI" index="18"]
+offset_top = 412.0
+offset_bottom = 470.0
+
+[node name="Label4" parent="PreparationsUI" index="20"]
+offset_top = 565.0
+offset_bottom = 623.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Background" parent="CanvasLayer" instance=ExtResource("8_ulwdi")]
+offset_left = -1178.0
+offset_top = -675.0
+offset_right = 1200.0
+offset_bottom = 688.0
+
+[node name="ColorRect" parent="CanvasLayer/Background" index="0"]
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 2352.0
+offset_bottom = 1348.0
+
+[node name="UnitContainer" type="Node" parent="."]
+
+[node name="Pathfinding" parent="." instance=ExtResource("7_u60e7")]
+unique_name_in_owner = true
+
+[node name="TurnManager" parent="." instance=ExtResource("9_0oc0y")]
+unique_name_in_owner = true
+
+[connection signal="button_down" from="UI/UnitMenu/ButtonContainer/BotonAtaque" to="." method="_on_boton_ataque_button_down"]
+[connection signal="button_down" from="UI/UnitMenu/ButtonContainer/BotonAtaque" to="UI/UnitMenu" method="_on_boton_ataque_button_down"]
+[connection signal="button_down" from="UI/UnitMenu/ButtonContainer/BotonMovimiento" to="." method="_on_boton_movimiento_button_down"]
+[connection signal="button_down" from="UI/EndTurn" to="." method="_on_end_turn_button_down"]
+[connection signal="preparation_finished" from="PreparationsUI" to="TurnManager" method="_on_preparations_ui_preparation_finished"]
+
+[editable path="TileMaps"]
+[editable path="UI/UnitMenu"]
+[editable path="UI/UnitStatus"]
+[editable path="PreparationsUI"]
+[editable path="CanvasLayer/Background"]

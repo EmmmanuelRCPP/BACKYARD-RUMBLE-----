@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b3o1tklwnrlv6"
+path="res://.godot/imported/rumble menu select.ogg-a480d2c3365a0b013c67a0e243906766.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/sfx/rumble menu select.ogg"
+dest_files=["res://.godot/imported/rumble menu select.ogg-a480d2c3365a0b013c67a0e243906766.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

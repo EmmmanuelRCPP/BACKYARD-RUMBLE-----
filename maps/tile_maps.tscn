@@ -1,0 +1,112 @@
+[gd_scene load_steps=12 format=3 uid="uid://s1sqkg7o041p"]
+
+[ext_resource type="Script" uid="uid://d3x8c65y8d2tw" path="res://maps/tile_maps.gd" id="1_ba2ri"]
+[ext_resource type="TileSet" uid="uid://utdqycapowsr" path="res://resources/tileSets/TESTTileSet.tres" id="1_g277f"]
+[ext_resource type="TileSet" uid="uid://c0578ku6n58ic" path="res://resources/tileSets/UnitTileSET.tres" id="3_b1d7s"]
+[ext_resource type="PackedScene" uid="uid://da8538gukmrwy" path="res://resources/tileSets/special_tiles/cone.tscn" id="3_h7ske"]
+[ext_resource type="Texture2D" uid="uid://cqsr63cstxaxw" path="res://art/tile/sprsheet 0.png" id="4_xifon"]
+[ext_resource type="Texture2D" uid="uid://boylxf6xngeme" path="res://art/tile/COMtiles.png" id="5_xifon"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_innsy"]
+scenes/9/scene = ExtResource("3_h7ske")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o17tq"]
+texture = ExtResource("4_xifon")
+texture_region_size = Vector2i(128, 128)
+0:2/0 = 0
+0:2/0/texture_origin = Vector2i(0, -32)
+0:2/0/modulate = Color(1, 0.20784314, 0.2, 0.79607844)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, -32)
+0:0/0/custom_data_0 = true
+0:1/0 = 0
+0:1/0/texture_origin = Vector2i(0, -32)
+0:1/0/custom_data_0 = true
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, -32)
+1:0/0/custom_data_0 = true
+1:1/0 = 0
+1:1/0/texture_origin = Vector2i(0, -32)
+1:1/0/modulate = Color(1, 1, 1, 0.827451)
+1:2/0 = 0
+1:2/0/texture_origin = Vector2i(0, -32)
+1:2/0/custom_data_0 = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_innsy"]
+texture = ExtResource("5_xifon")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+1:2/0/texture_origin = Vector2i(0, -32)
+1:2/0/modulate = Color(1, 1, 1, 0.7058824)
+2:2/0 = 0
+2:2/0/texture_origin = Vector2i(0, -32)
+2:2/0/modulate = Color(1, 1, 1, 0.7058824)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_twexp"]
+texture = ExtResource("4_xifon")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, -32)
+0:0/0/modulate = Color(0.78931326, 0.2553601, 0, 1)
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, -32)
+1:0/0/modulate = Color(0.78931326, 0.2553601, 0, 1)
+0:1/0 = 0
+0:1/0/texture_origin = Vector2i(0, -32)
+0:1/0/modulate = Color(0.78931326, 0.2553601, 0, 1)
+1:1/0 = 0
+1:1/0/texture_origin = Vector2i(0, -32)
+1:1/0/modulate = Color(0.78931326, 0.2553601, 0, 1)
+0:2/0 = 0
+0:2/0/texture_origin = Vector2i(0, -32)
+0:2/0/modulate = Color(0.78931326, 0.2553601, 0, 1)
+1:2/0 = 0
+1:2/0/texture_origin = Vector2i(0, -32)
+1:2/0/modulate = Color(0.78931326, 0.2553601, 0, 1)
+
+[sub_resource type="TileSet" id="TileSet_pkusk"]
+tile_shape = 1
+tile_layout = 5
+tile_size = Vector2i(128, 64)
+custom_data_layer_0/name = "passable"
+custom_data_layer_0/type = 1
+sources/1 = SubResource("TileSetAtlasSource_o17tq")
+sources/0 = SubResource("TileSetScenesCollectionSource_innsy")
+sources/3 = SubResource("TileSetAtlasSource_twexp")
+sources/2 = SubResource("TileSetAtlasSource_innsy")
+
+[node name="TileMaps" type="Node2D"]
+script = ExtResource("1_ba2ri")
+
+[node name="LayerContainer" type="Node" parent="."]
+
+[node name="GroundLayer" type="TileMapLayer" parent="LayerContainer"]
+unique_name_in_owner = true
+y_sort_enabled = true
+position = Vector2(-35, -11)
+tile_set = ExtResource("1_g277f")
+
+[node name="EffectsLayer" type="TileMapLayer" parent="LayerContainer"]
+unique_name_in_owner = true
+y_sort_enabled = true
+position = Vector2(-35, -11)
+tile_set = SubResource("TileSet_pkusk")
+
+[node name="PropLayer" type="TileMapLayer" parent="LayerContainer"]
+unique_name_in_owner = true
+y_sort_enabled = true
+position = Vector2(-35, -11)
+tile_set = ExtResource("1_g277f")
+
+[node name="UnitLayer" type="TileMapLayer" parent="LayerContainer"]
+unique_name_in_owner = true
+y_sort_enabled = true
+position = Vector2(-35, -11)
+tile_set = ExtResource("3_b1d7s")

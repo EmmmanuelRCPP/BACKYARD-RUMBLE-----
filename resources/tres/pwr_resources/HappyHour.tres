@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Stat_Update_battle_and_hurt" load_steps=3 format=3 uid="uid://dr7xsg2bvqq4"]
+
+[ext_resource type="Texture2D" uid="uid://cogt4o8njusmx" path="res://art/Pwrs/Pwr_p.png" id="1_1ir0c"]
+[ext_resource type="Script" uid="uid://csvmkgxnx2sbf" path="res://resources/pwr_scripts/on_battle_begin_hurt.gd" id="1_x8tq1"]
+
+[resource]
+script = ExtResource("1_x8tq1")
+luck2 = -25
+power_name = "Happy Hour"
+hp = 0
+max_hp = 0
+attack = 0
+avoid = 0
+luck = 100
+movement = 0
+attack_range = 0
+icon = ExtResource("1_1ir0c")
+description = "Feeling lucky! Start with huge luck, but lose some when hit."
+metadata/_custom_type_script = "uid://csvmkgxnx2sbf"

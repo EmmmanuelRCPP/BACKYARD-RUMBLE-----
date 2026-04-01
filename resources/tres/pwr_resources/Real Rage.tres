@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Stat_Update_battle_and_hurt" load_steps=3 format=3 uid="uid://b6ws8bueck0j8"]
+
+[ext_resource type="Texture2D" uid="uid://hbng6dea4ilc" path="res://art/Pwrs/Pwr_u.png" id="1_55a5b"]
+[ext_resource type="Script" uid="uid://csvmkgxnx2sbf" path="res://resources/pwr_scripts/on_battle_begin_hurt.gd" id="1_dokgl"]
+
+[resource]
+script = ExtResource("1_dokgl")
+attack2 = 3
+luck2 = -20
+avoid2 = -20
+power_name = "Real Rage"
+hp = 10
+max_hp = 0
+attack = 0
+avoid = 0
+movement = 0
+attack_range = 0
+icon = ExtResource("1_55a5b")
+description = "Now it’s serious. Gain health and build ATK when hit, but lose avoid and luck."
+metadata/_custom_type_script = "uid://csvmkgxnx2sbf"

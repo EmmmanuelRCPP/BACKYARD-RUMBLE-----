@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Stat_Update" load_steps=3 format=3 uid="uid://k04xp3lvumtf"]
+
+[ext_resource type="Texture2D" uid="uid://cvia6nigqbhsc" path="res://art/Pwrs/Pwr_r.png" id="1_peewm"]
+[ext_resource type="Script" uid="uid://df17f3aaqhp3f" path="res://resources/pwr_scripts/on_turn_start.gd" id="1_qewee"]
+
+[resource]
+script = ExtResource("1_qewee")
+power_name = "Healthy Lunch"
+hp = 3
+max_hp = 3
+attack = 3
+avoid = 3
+luck = 3
+movement = 3
+attack_range = 3
+icon = ExtResource("1_peewm")
+description = "A balanced meal. Gain +3 to all stats at the start of battle."
+metadata/_custom_type_script = "uid://df17f3aaqhp3f"

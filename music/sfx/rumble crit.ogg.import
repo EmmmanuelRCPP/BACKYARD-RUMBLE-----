@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bfsq65e4hoa81"
+path="res://.godot/imported/rumble crit.ogg-67c01bf4da0c6ff37d008dd3efa225fa.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/sfx/rumble crit.ogg"
+dest_files=["res://.godot/imported/rumble crit.ogg-67c01bf4da0c6ff37d008dd3efa225fa.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

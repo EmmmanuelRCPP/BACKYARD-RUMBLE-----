@@ -1,0 +1,241 @@
+[gd_scene load_steps=8 format=3 uid="uid://w6pvu5pxcqrs"]
+
+[ext_resource type="Script" uid="uid://llw6814vytx" path="res://shop/shop.gd" id="1_sxvro"]
+[ext_resource type="PackedScene" uid="uid://dr7qcbg4itpk5" path="res://UI/Preparations/power_card.tscn" id="2_givde"]
+[ext_resource type="Theme" uid="uid://uerdq36pewq8" path="res://UI/TEXT_THEME.tres" id="3_givde"]
+[ext_resource type="PackedScene" uid="uid://efxpfwugsxvl" path="res://test_environments/sfx_player.tscn" id="4_q4g17"]
+[ext_resource type="AudioStream" uid="uid://j4knb7iba14q" path="res://music/sfx/cash.ogg" id="5_2wf2a"]
+[ext_resource type="AudioStream" uid="uid://dn07ihbgam172" path="res://music/sfx/hurt.ogg" id="6_xad5q"]
+[ext_resource type="PackedScene" uid="uid://b8222u41jwoxc" path="res://UI/button.tscn" id="7_2wf2a"]
+
+[node name="SHOP" type="CanvasLayer"]
+script = ExtResource("1_sxvro")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1158.0
+offset_bottom = 653.0
+color = Color(0.099985994, 0.099985994, 0.099985994, 1)
+
+[node name="Items_on_sale" type="Node" parent="."]
+
+[node name="PowerCard" parent="Items_on_sale" instance=ExtResource("2_givde")]
+offset_left = 59.0
+offset_top = 115.0
+offset_right = 169.0
+offset_bottom = 201.0
+
+[node name="PowerCard2" parent="Items_on_sale" instance=ExtResource("2_givde")]
+offset_left = 106.0
+offset_top = 255.0
+offset_right = 216.0
+offset_bottom = 341.0
+
+[node name="PowerCard3" parent="Items_on_sale" instance=ExtResource("2_givde")]
+offset_left = 166.0
+offset_top = 117.0
+offset_right = 276.0
+offset_bottom = 203.0
+
+[node name="PowerCard4" parent="Items_on_sale" instance=ExtResource("2_givde")]
+offset_left = 213.0
+offset_top = 256.0
+offset_right = 323.0
+offset_bottom = 342.0
+
+[node name="PowerCard5" parent="Items_on_sale" instance=ExtResource("2_givde")]
+offset_left = 278.0
+offset_top = 122.0
+offset_right = 388.0
+offset_bottom = 208.0
+
+[node name="Prices" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Prices"]
+offset_left = 80.0
+offset_top = 198.0
+offset_right = 120.0
+offset_bottom = 237.0
+theme = ExtResource("3_givde")
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 32
+text = "5"
+
+[node name="Label2" type="Label" parent="Prices"]
+offset_left = 128.0
+offset_top = 335.0
+offset_right = 168.0
+offset_bottom = 374.0
+theme = ExtResource("3_givde")
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 32
+text = "5"
+
+[node name="Label3" type="Label" parent="Prices"]
+offset_left = 194.0
+offset_top = 198.0
+offset_right = 234.0
+offset_bottom = 237.0
+theme = ExtResource("3_givde")
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 32
+text = "5"
+
+[node name="Label4" type="Label" parent="Prices"]
+offset_left = 237.0
+offset_top = 332.0
+offset_right = 277.0
+offset_bottom = 371.0
+theme = ExtResource("3_givde")
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 32
+text = "5"
+
+[node name="Label5" type="Label" parent="Prices"]
+offset_left = 301.0
+offset_top = 199.0
+offset_right = 341.0
+offset_bottom = 238.0
+theme = ExtResource("3_givde")
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 32
+text = "5"
+
+[node name="Desc" type="RichTextLabel" parent="."]
+offset_left = 39.0
+offset_top = 503.0
+offset_right = 636.0
+offset_bottom = 608.0
+theme = ExtResource("3_givde")
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/normal_font_size = 32
+text = "Description"
+
+[node name="Name" type="RichTextLabel" parent="."]
+offset_left = 39.0
+offset_top = 469.0
+offset_right = 636.0
+offset_bottom = 574.0
+theme = ExtResource("3_givde")
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/normal_font_size = 32
+text = "NAme"
+
+[node name="Cash" type="RichTextLabel" parent="."]
+offset_left = 43.0
+offset_top = 21.0
+offset_right = 640.0
+offset_bottom = 126.0
+theme = ExtResource("3_givde")
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/normal_font_size = 48
+text = "CASH"
+
+[node name="Order" type="RichTextLabel" parent="."]
+offset_left = 424.0
+offset_top = 272.0
+offset_right = 732.0
+offset_bottom = 418.0
+theme = ExtResource("3_givde")
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/normal_font_size = 32
+text = "Buy new PWRs"
+horizontal_alignment = 1
+
+[node name="Order2" type="RichTextLabel" parent="."]
+offset_left = 868.0
+offset_top = 26.0
+offset_right = 990.0
+offset_bottom = 172.0
+theme = ExtResource("3_givde")
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/normal_font_size = 48
+text = "Deck:"
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 805.0
+offset_top = 85.0
+offset_right = 1044.0
+offset_bottom = 471.0
+columns = 3
+
+[node name="PowerCard" parent="GridContainer" instance=ExtResource("2_givde")]
+layout_mode = 2
+
+[node name="PowerCard2" parent="GridContainer" instance=ExtResource("2_givde")]
+layout_mode = 2
+
+[node name="PowerCard3" parent="GridContainer" instance=ExtResource("2_givde")]
+layout_mode = 2
+
+[node name="PowerCard4" parent="GridContainer" instance=ExtResource("2_givde")]
+layout_mode = 2
+
+[node name="PowerCard5" parent="GridContainer" instance=ExtResource("2_givde")]
+layout_mode = 2
+
+[node name="PowerCard6" parent="GridContainer" instance=ExtResource("2_givde")]
+layout_mode = 2
+
+[node name="PowerCard7" parent="GridContainer" instance=ExtResource("2_givde")]
+layout_mode = 2
+
+[node name="PowerCard8" parent="GridContainer" instance=ExtResource("2_givde")]
+layout_mode = 2
+
+[node name="PowerCard9" parent="GridContainer" instance=ExtResource("2_givde")]
+layout_mode = 2
+
+[node name="PowerCard10" parent="GridContainer" instance=ExtResource("2_givde")]
+layout_mode = 2
+
+[node name="PowerCard11" parent="GridContainer" instance=ExtResource("2_givde")]
+layout_mode = 2
+
+[node name="PowerCard12" parent="GridContainer" instance=ExtResource("2_givde")]
+layout_mode = 2
+
+[node name="PowerCard13" parent="GridContainer" instance=ExtResource("2_givde")]
+layout_mode = 2
+
+[node name="PowerCard14" parent="GridContainer" instance=ExtResource("2_givde")]
+layout_mode = 2
+
+[node name="PowerCard15" parent="GridContainer" instance=ExtResource("2_givde")]
+layout_mode = 2
+
+[node name="SFXPlayer" parent="." instance=ExtResource("4_q4g17")]
+stream = ExtResource("5_2wf2a")
+
+[node name="No" parent="." instance=ExtResource("4_q4g17")]
+stream = ExtResource("6_xad5q")
+
+[node name="BotonAtaque" parent="." instance=ExtResource("7_2wf2a")]
+offset_left = 798.0
+offset_top = 495.0
+offset_right = 1148.0
+offset_bottom = 645.0
+scale = Vector2(0.7, 0.7)
+
+[node name="txt" type="RichTextLabel" parent="."]
+offset_left = 818.0
+offset_top = 519.0
+offset_right = 1041.0
+offset_bottom = 665.0
+mouse_filter = 2
+theme = ExtResource("3_givde")
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/normal_font_size = 48
+text = "Exit Shop"
+
+[connection signal="button_down" from="BotonAtaque" to="." method="_on_boton_ataque_button_down"]

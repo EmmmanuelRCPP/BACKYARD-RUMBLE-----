@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ij2qw4dcscdm"
+path="res://.godot/imported/rumble (ingame).mp3-3f686cf446c804b87fda58efd049b269.mp3str"
+
+[deps]
+
+source_file="res://music/rumble (ingame).mp3"
+dest_files=["res://.godot/imported/rumble (ingame).mp3-3f686cf446c804b87fda58efd049b269.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

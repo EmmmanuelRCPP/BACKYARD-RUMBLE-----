@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="UnitData" load_steps=7 format=3 uid="uid://bhlkx5n28pb83"]
+
+[ext_resource type="Resource" uid="uid://bp8yrptci1pts" path="res://resources/tres/pwr_resources/Energy Rush.tres" id="1_ig2ht"]
+[ext_resource type="Resource" uid="uid://b6ws8bueck0j8" path="res://resources/tres/pwr_resources/Real Rage.tres" id="2_dvxc4"]
+[ext_resource type="Resource" uid="uid://dr7xsg2bvqq4" path="res://resources/tres/pwr_resources/HappyHour.tres" id="3_t4ceo"]
+[ext_resource type="Resource" uid="uid://m2nua85refk6" path="res://resources/tres/pwr_resources/Running Shoes.tres" id="4_agewr"]
+[ext_resource type="Script" uid="uid://duxf0qsqbsnxh" path="res://databases/unit_resource.gd" id="5_uchd3"]
+[ext_resource type="Texture2D" uid="uid://bjy21u6a0lal3" path="res://art/unit/e3.png" id="6_0n65s"]
+
+[resource]
+script = ExtResource("5_uchd3")
+unit_name = "BigBoss"
+faction = 1
+ID = 12
+attack = 8
+avoid = 20
+luck = 30
+movement = 4
+attack_range = 3
+current_hp = 67
+inventory = Array[Resource]([ExtResource("1_ig2ht"), ExtResource("2_dvxc4"), ExtResource("3_t4ceo"), ExtResource("4_agewr")])
+texture = ExtResource("6_0n65s")
+metadata/_custom_type_script = "uid://duxf0qsqbsnxh"
